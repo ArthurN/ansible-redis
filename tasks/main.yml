@@ -21,6 +21,7 @@
   when: redis_sentinel
   tags:
     - config
+    - redis-sentinel
 
 - include: local_facts.yml
   when: redis_local_facts|bool
